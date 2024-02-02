@@ -10,7 +10,7 @@ export default function Main() {
         </div>
 
         <div  className="text-3xl bg-slate-950 text-white flex flex-col justify-center items-center">
-         <h2>Good morning, {greetMe}</h2>
+         <h2>{new Date().getHours() > 15 ? 'Bon soir' : new Date().getHours() > 11 ? 'Bonjour' : 'Bonjour ce matin'}</h2>
          <h1>fundamentals of React JS</h1>
         </div>
     </div>
